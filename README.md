@@ -3,10 +3,13 @@
 1. get api-key from 
 https://macaddress.io/api
 
+
 2. build jdk8 + jar image from base
 $docker image build -t jdk8-with-jar-image-from-dockerfile .
 
+
 3. verify inside container
+
 $docker container run -it jdk8-with-jar-image-from-dockerfile /bin/bash
 /usr/local/bin# java -jar  CompanyLookupFromMacAddress.jar
 Enter your macAddress: 44:38:39:ff:ef:57
